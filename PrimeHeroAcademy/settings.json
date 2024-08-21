@@ -1,0 +1,5 @@
+{
+  "python.pythonPath": "Applications/python.exe",
+  "robot.pythonPath": "Applications/python.exe",
+  "robot.libraries.libdoc.needToGenerateLibDoc": false
+}

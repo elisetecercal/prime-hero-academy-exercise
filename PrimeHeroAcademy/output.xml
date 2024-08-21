@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.2 on darwin)" generated="2024-08-21T13:39:25.386805" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste Chrome" source="/Users/jpcercal/projects/PrimeHeroAcademy/teste_chrome.robot">
+<test id="s1-t1" name="Open Google and Search" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-21T13:39:25.460665" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-21T13:39:25.460549" elapsed="3.766902"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-21T13:39:29.228077" elapsed="0.020776"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-21T13:39:29.249667" level="INFO">Clicking element '//*[(contains(text(), 'Aceitar tudo'))]'.</msg>
+<arg>${aceitarTudo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-21T13:39:29.249070" elapsed="0.030141"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-21T13:39:29.280248" level="INFO">Typing text 'Robot Framework' into text field '//*[@id="APjFqb"]'.</msg>
+<msg time="2024-08-21T13:39:29.411934" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-21T13:39:29.412080" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+0   chromedriver                        0x00000001030bd024 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x00000001030b5700 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000102cc4694 cxxbridge1$string$len + 88116
+3   chromedriver                        0x0000000102d0352c cxxbridge1$string$len + 345804
+4   chromedriver                        0x0000000102d01f28 cxxbridge1$string$len + 340168
+5   chromedriver                        0x0000000102cfee38 cxxbridge1$string$len + 327640
+6   chromedriver                        0x0000000102d4048c cxxbridge1$string$len + 595500
+7   chromedriver                        0x0000000102cfd474 cxxbridge1$string$len + 321044
+8   chromedriver                        0x0000000102cfe0e4 cxxbridge1$string$len + 324228
+9   chromedriver                        0x0000000103084a08 cxxbridge1$str$ptr + 1656336
+10  chromedriver                        0x0000000103089464 cxxbridge1$str$ptr + 1675372
+11  chromedriver                        0x000000010306a8ec cxxbridge1$str$ptr + 1549556
+12  chromedriver                        0x0000000103089c14 cxxbridge1$str$ptr + 1677340
+13  chromedriver                        0x000000010305c5fc cxxbridge1$str$ptr + 1491460
+14  chromedriver                        0x00000001030a6a5c cxxbridge1$str$ptr + 1795684
+15  chromedriver                        0x00000001030a6bd8 cxxbridge1$str$ptr + 1796064
+16  chromedriver                        0x00000001030b5334 cxxbridge1$str$ptr + 1855292
+17  libsystem_pthread.dylib             0x000000019e712f94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x000000019e70dd34 thread_start + 8
+</msg>
+<arg>${searchBox}</arg>
+<arg>Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-08-21T13:39:29.280085" elapsed="0.134791">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+0   chromedriver                        0x00000001030bd024 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x00000001030b5700 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000102cc4694 cxxbridge1$string$len + 88116
+3   chromedriver                        0x0000000102d0352c cxxbridge1$string$len + 345804
+4   chromedriver                        0x0000000102d01f28 cxxbridge1$string$len + 340168
+5   chromedriver                        0x0000000102cfee38 cxxbridge1$string$len + 327640
+6   chromedriver                        0x0000000102d4048c cxxbridge1$string$len + 595500
+7   chromedriver                        0x0000000102cfd474 cxxbridge1$string$len + 321044
+8   chromedriver                        0x0000000102cfe0e4 cxxbridge1$string$len + 324228
+9   chromedriver                        0x0000000103084a08 cxxbridge1$str$ptr + 1656336
+10  chromedriver                        0x0000000103089464 cxxbridge1$str$ptr + 1675372
+11  chromedriver                        0x000000010306a8ec cxxbridge1$str$ptr + 1549556
+12  chromedriver                        0x0000000103089c14 cxxbridge1$str$ptr + 1677340
+13  chromedriver                        0x000000010305c5fc cxxbridge1$str$ptr + 1491460
+14  chromedriver                        0x00000001030a6a5c cxxbridge1$str$ptr + 1795684
+15  chromedriver                        0x00000001030a6bd8 cxxbridge1$str$ptr + 1796064
+16  chromedriver                        0x00000001030b5334 cxxbridge1$str$ptr + 1855292
+17  libsystem_pthread.dylib             0x000000019e712f94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x000000019e70dd34 thread_start + 8
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${pesquisaButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-21T13:39:29.415019" elapsed="0.000020"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-08-21T13:39:29.415108" elapsed="0.000012"/>
+</kw>
+<status status="FAIL" start="2024-08-21T13:39:25.460131" elapsed="3.955118">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=127.0.6533.120)
+Stacktrace:
+0   chromedriver                        0x00000001030bd024 cxxbridge1$str$ptr + 1887276
+1   chromedriver                        0x00000001030b5700 cxxbridge1$str$ptr + 1856264
+2   chromedriver                        0x0000000102cc4694 cxxbridge1$string$len + 88116
+3   chromedriver                        0x0000000102d0352c cxxbridge1$string$len + 345804
+4   chromedriver                        0x0000000102d01f28 cxxbridge1$string$len + 340168
+5   chromedriver                        0x0000000102cfee38 cxxbridge1$string$len + 327640
+6   chromedriver                        0x0000000102d4048c cxxbridge1$string$len + 595500
+7   chromedriver                        0x0000000102cfd474 cxxbridge1$string$len + 321044
+8   chromedriver                        0x0000000102cfe0e4 cxxbridge1$string$len + 324228
+9   chromedriver                        0x0000000103084a08 cxxbridge1$str$ptr + 1656336
+10  chromedriver                        0x0000000103089464 cxxbridge1$str$ptr + 1675372
+11  chromedriver                        0x000000010306a8ec cxxbridge1$str$ptr + 1549556
+12  chromedriver                        0x0000000103089c14 cxxbridge1$str$ptr + 1677340
+13  chromedriver                        0x000000010305c5fc cxxbridge1$str$ptr + 1491460
+14  chromedriver                        0x00000001030a6a5c cxxbridge1$str$ptr + 1795684
+15  chromedriver                        0x00000001030a6bd8 cxxbridge1$str$ptr + 1796064
+16  chromedriver                        0x00000001030b5334 cxxbridge1$str$ptr + 1855292
+17  libsystem_pthread.dylib             0x000000019e712f94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x000000019e70dd34 thread_start + 8
+</status>
+</test>
+<status status="FAIL" start="2024-08-21T13:39:25.387424" elapsed="4.028157"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste Chrome">Teste Chrome</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
